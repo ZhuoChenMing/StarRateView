@@ -2,7 +2,7 @@
 
 样式
 
- ![image](https://github.com/ZhuoChenMing/ImageCropper/blob/master/sc.png)
+ ![image](https://github.com/ZhuoChenMing/StarRateView/blob/master/sc.png)
 
 使用：引入头文件后
 
