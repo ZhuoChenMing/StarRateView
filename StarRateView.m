@@ -27,7 +27,7 @@
 @implementation StarRateView
 #pragma mark - Init Methods
 - (instancetype)init {
-    NSAssert(NO, @"You should never call this method in this class. Use initWithFrame: instead!");
+    NSAssert(NO, @"使用initWithFrame:");
     return nil;
 }
 
@@ -92,10 +92,9 @@
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    __weak StarRateView *weakSelf = self;
     CGFloat animationTimeInterval = self.hasAnimation ? ANIMATION_TIME_INTERVAL : 0;
     [UIView animateWithDuration:animationTimeInterval animations:^{
-        weakSelf.activeStarView.frame = CGRectMake(0, 0, weakSelf.bounds.size.width * weakSelf.scorePercent, weakSelf.bounds.size.height);
+        self.activeStarView.frame = CGRectMake(0, 0, self.bounds.size.width * self.scorePercent, self.bounds.size.height);
     }];
 }
 
